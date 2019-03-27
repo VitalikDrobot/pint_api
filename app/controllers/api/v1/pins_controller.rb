@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Api::V1::PinsController < ApplicationController
   before_action :find_pin, only: %i[show edit update destroy]
 
@@ -32,7 +34,7 @@ class Api::V1::PinsController < ApplicationController
 
   def update
     if @pin.update(pin_params)
-    render json: @pin
+      render json: @pin
     else
       render json: @pin.errors, status: :unprocessable_entity
     end

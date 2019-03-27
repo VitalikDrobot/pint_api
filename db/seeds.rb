@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 pin = Pin.create(
   [
     {
@@ -5,4 +7,5 @@ pin = Pin.create(
       description: 'lorem ipso',
       image: 'vcsvsfdvdfdfb'
     }
-  ])
+  ]
+)
