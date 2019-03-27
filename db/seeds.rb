@@ -1,7 +1,8 @@
-users = User.create(
+pin = Pin.create(
   [
     {
-      email: "vitalik@ukr.net",
-      password: "123456789"
+      title: 'Hello world',
+      description: 'lorem ipso',
+      image: 'vcsvsfdvdfdfb'
     }
   ])
