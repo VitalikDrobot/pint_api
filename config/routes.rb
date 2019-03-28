@@ -6,4 +6,5 @@ Rails.application.routes.draw do
       resources :pins
     end
   end
+  post 'authenticate', to: 'authentication#authenticate'
 end
