@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Api::V1::PinsController < ApplicationController
-  before_action :find_pin, only: %i[show edit update destroy]
+  before_action :find_pin, only: %i[show edit update destroy upvote]
 
   def cloudinary_data
     @cloudinary_data = Cloudinary::Uploader.upload(*uploadParams)
@@ -42,6 +42,11 @@ class Api::V1::PinsController < ApplicationController
 
   def destroy
     @pin.destroy
+  end
+
+  def upvote
+    @pin.upvote_by current_user
+    render json: @pin
   end
 
   private
