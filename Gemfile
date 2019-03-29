@@ -14,6 +14,7 @@ gem 'dotenv-rails'
 gem 'jwt'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
+gem 'rack-cors', require: 'rack/cors'
 gem 'rails', '~> 5.2.2', '>= 5.2.2.1'
 gem 'rubocop', require: false
 gem 'simple_command'
