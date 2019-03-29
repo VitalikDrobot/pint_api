@@ -28,7 +28,7 @@ module PinterestApi
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'https://tranquil-crag-19897.herokuapp.com/'
+        origins 'http://localhost:3000', 'https://tranquil-crag-19897.herokuapp.com/'
         resource '*', headers: :any, methods: %i[get post put delete options]
       end
     end
