@@ -10,6 +10,4 @@ Rails.application.routes.draw do
       end
     end
   end
-  post 'authenticate', to: 'authentication#authenticate'
-  root to: 'pins#index'
 end
